@@ -68,6 +68,6 @@ class PurchaseServiceProvider extends ServiceProvider
      */
     public function routeConfig(): array
     {
-        return config('purchase.routing');
+        return config('purchase.routing') ? config('purchase.routing') : [];
     }
 }
